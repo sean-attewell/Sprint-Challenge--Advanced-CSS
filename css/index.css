@@ -189,6 +189,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
