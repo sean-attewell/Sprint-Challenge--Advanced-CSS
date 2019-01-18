@@ -132,6 +132,9 @@ table {
 html {
   font-size: 62.5%;
 }
+html ::-webkit-scrollbar {
+  display: none;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
