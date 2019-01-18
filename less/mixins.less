@@ -1,1 +1,35 @@
 // Mixins Here
+
+.flex-mixin(@direction, @justify, @align) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.container-width-mixin(@max; @percent) {
+    max-width: @max;
+    width: @percent;
+    margin: 0 auto;  
+}
+
+// main container 800px; 94%
+
+
+.button-mixin(@fontsize; @width; @height) {
+    color: @sea-shell;
+    font-size: @fontsize;
+    font-weight: bold;
+    text-align: center;
+    background-color: @btn-bg-color;
+    width: @width;
+    height: @height;
+    line-height: @height;
+    // padding: auto 0;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover {
+        background-color: @sea-shell;
+        color: @btn-bg-color;
+    }
+}
