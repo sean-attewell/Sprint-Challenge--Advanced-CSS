@@ -16,15 +16,16 @@
 // main container 800px; 94%
 
 
-.button-mixin(@fontsize; @width) {
+.button-mixin(@fontsize; @width; @height) {
     color: @sea-shell;
     font-size: @fontsize;
     font-weight: bold;
     text-align: center;
     background-color: @btn-bg-color;
     width: @width;
-    height: 35px;
-    padding: 9.5px 0;
+    height: @height;
+    line-height: @height;
+    // padding: auto 0;
     cursor: pointer;
     border-radius: 5px;
     &:hover {

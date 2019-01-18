@@ -5,6 +5,9 @@ nav {
     background-color: @nav-bg;
     padding-top: 13px;
     padding-bottom: 10px;
+    @media @phone {
+        padding-bottom: 15px;
+    }
     h1 {
         font-size: 4rem;
         padding-bottom: 20px;
@@ -15,6 +18,9 @@ nav {
             color: @nav-font;
             font-size: 1.6rem;
             padding: 0 15px;
+        }
+        @media @phone {
+            .flex-mixin(row, space-around, center);
         }
     }
 }    
